@@ -11,8 +11,8 @@ const voteSchema = mongoose.Schema({
   img_name: {
     type: String,
   },
-  deviceIdentifier: {
-    type: String,
+  deviceIdentifiers: {
+    type: [String],
     required: true,
   },
 });
